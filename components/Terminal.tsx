@@ -89,7 +89,7 @@ const Terminal: React.FC = () => {
         {isTyping && (
           <div className="flex justify-start">
              <div className="text-eno-accent animate-pulse">
-                > Processing...
+                {'>'} Processing...
              </div>
           </div>
         )}
