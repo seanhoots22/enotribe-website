@@ -71,7 +71,6 @@ const Terminal: React.FC = () => {
             </button>
         </div>
       </div>
-
       {/* Output */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4 font-mono">
         {messages.map((msg, idx) => (
@@ -89,7 +88,7 @@ const Terminal: React.FC = () => {
         {isTyping && (
           <div className="flex justify-start">
              <div className="text-eno-accent animate-pulse">
-                {'&gt;'} Processing...
+                {'>'} Processing...
              </div>
           </div>
         )}
