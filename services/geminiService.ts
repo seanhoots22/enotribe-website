@@ -1,7 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const SYSTEM_INSTRUCTION = `
 You are the "Enotribe Core", an AI interface for Enotribe LLC. 
@@ -21,10 +20,6 @@ If asked about specific technologies, list: React, Python, TensorFlow, Google Cl
 `;
 
 export const sendMessageToGemini = async (history: { role: string, parts: { text: string }[] }[], message: string): Promise<string> => {
-  if (!apiKey) {
-    return "Enotribe Core: SYSTEM OFFLINE. API Key missing.";
-  }
-
   try {
     const model = 'gemini-3-flash-preview';
     
