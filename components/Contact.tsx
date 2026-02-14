@@ -50,8 +50,8 @@ const Contact: React.FC = () => {
                         <span className="font-bold tracking-wider">UNITED STATES</span>
                     </div>
                     <div className="space-y-1 opacity-80">
-                        <p>123 Innovation Drive</p>
-                        <p>Tech District, CA 94043</p>
+                        <p>405 Crafton Circle</p>
+                        <p>Charlottesville, VA 22911</p>
                     </div>
                     <p className="mt-4 text-xs text-eno-accent/70 opacity-0 group-hover:opacity-100 transition-opacity">Silicon Valley HQ</p>
                 </div>
